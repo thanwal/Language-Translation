@@ -1,0 +1,9 @@
+https://dagshub.com/thanwal/Language-Translation-.mlflow
+
+import dagshub
+dagshub.init(repo_owner='thanwal', repo_name='Language-Translation-', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)y
