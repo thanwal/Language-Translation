@@ -1,0 +1,13 @@
+Seq2Seq(
+  (encoder): Encoder(
+    (embedding): Embedding(2972, 300)
+    (rnn): RNN(300, 512, num_layers=2, batch_first=True, dropout=0.4)
+    (dropout): Dropout(p=0.4, inplace=False)
+  )
+  (decoder): Decoder(
+    (embedding): Embedding(883, 300)
+    (rnn): RNN(300, 512, num_layers=2, batch_first=True, dropout=0.4)
+    (fc): Linear(in_features=512, out_features=883, bias=True)
+    (dropout): Dropout(p=0.4, inplace=False)
+  )
+)
