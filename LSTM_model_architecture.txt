@@ -1,13 +1,13 @@
 Seq2Seq(
   (encoder): Encoder(
-    (embedding): Embedding(522, 300)
-    (lstm): LSTM(300, 256, num_layers=2, batch_first=True, dropout=0.3)
-    (dropout): Dropout(p=0.3, inplace=False)
+    (embedding): Embedding(5301, 300)
+    (lstm): LSTM(300, 512, num_layers=2, batch_first=True, dropout=0.4)
+    (dropout): Dropout(p=0.4, inplace=False)
   )
   (decoder): Decoder(
-    (embedding): Embedding(601, 300)
-    (lstm): LSTM(300, 256, num_layers=2, batch_first=True, dropout=0.3)
-    (fc): Linear(in_features=256, out_features=601, bias=True)
-    (dropout): Dropout(p=0.3, inplace=False)
+    (embedding): Embedding(7068, 300)
+    (lstm): LSTM(300, 512, num_layers=2, batch_first=True, dropout=0.4)
+    (fc): Linear(in_features=512, out_features=7068, bias=True)
+    (dropout): Dropout(p=0.4, inplace=False)
   )
 )
